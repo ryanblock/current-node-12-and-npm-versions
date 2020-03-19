@@ -13,7 +13,7 @@ let versions = (node, npm) => `
   <body>
 
     <h2 class="center-text">
-      Current Node and NPM versions on Lambda (nodejs10.x):
+      Current Node and NPM versions on Lambda (nodejs12.x):
     </h2>
     <h1 class="center-text">
       Node: ${node || 'idk'}

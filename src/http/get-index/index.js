@@ -1,3 +1,4 @@
+const arc = require('@architect/functions')
 const exec = require('child_process').execSync
 
 let versions = (node, npm) => `
@@ -28,7 +29,9 @@ let versions = (node, npm) => `
 </html>
 `
 
-exports.handler = async function http() {
+exports.handler = arc.http.async(http)
+
+async function http() {
   let node = exec('node --version')
   let npm = exec('npm --version')
   let body = versions(node, npm)

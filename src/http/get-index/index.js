@@ -22,7 +22,7 @@ let versions = (node, npm) => `
       NPM: ${npm || 'idk'}
     </h1>
     <p class="center-text">
-      Made with <a href="https://begin.com" class="link" target="_blank">Begin</a>!
+      Made with <a href="https://begin.com" class="link" target="_blank">Begin</a>!!!
     </p>
 
   </body>
